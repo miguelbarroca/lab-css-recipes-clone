@@ -7,3 +7,97 @@ html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
 }
+
+* {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.title {
+  height: 600px;
+  background-image: url(../images/soup.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;   
+  background-position-y: center;
+ 
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3em;    
+}
+
+.grandmother {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 1em;
+  justify-content: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 50px;
+}
+
+.recipeInfo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 100px;
+}
+
+ul li::before {
+  content: "- ";
+}
+.ingredients {
+  display: flex;
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
+
+.cookingInfo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#thirdSection {
+  display: block;
+  justify-content: center;
+}
+
+hr {
+  width: 80%;
+}
+
+ol {
+/* 1. Remove the default list style */  
+list-style: none;
+padding-left: 110px;
+}
+
+ol > li {
+/* 2. Create a custom list counter */  
+counter-increment: listcounter;
+}
+
+ol > li::before {
+/*3. Set the new style for the list markers */
+content: counter(listcounter) ")";
+}
+
+.directions {
+  display: flex;
+  margin-left: 100px;
+  padding-bottom: 20px;
+}
